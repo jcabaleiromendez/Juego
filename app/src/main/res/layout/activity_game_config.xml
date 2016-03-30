@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <!--Numero de celdas-->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarXtxt"
+        />
+    <SeekBar
+        android:id="@+id/seekBarX"
+        android:max="6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    </SeekBar>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarYtxt" />
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarY"
+        android:max="6">
+
+    </SeekBar>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarColorstxt"
+        />
+    <SeekBar
+        android:id="@+id/seekBarColors"
+        android:max="5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    </SeekBar>
+    <!--Contenido -->
+        <RadioGroup
+            android:id="@+id/radioGroup01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <RadioButton
+            android:text="@string/radio_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonC">
+
+            </RadioButton>
+
+        <RadioButton
+            android:text="@string/radio_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonN"
+            android:checked="true">
+        </RadioButton>
+            </RadioGroup>
+    <!--Otras Opciones-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox android:text="@string/check_sound"
+            android:id="@+id/checkBoxSound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        </CheckBox>
+
+        <CheckBox
+            android:text="@string/check_vibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBoxVibrate">
+
+        </CheckBox>
+
+    </LinearLayout>
+    <Button
+        android:text="@string/startPlay"
+        android:gravity="center_horizontal|fill_horizontal|center"
+        android:id="@+id/startBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center"/>
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/crono"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
